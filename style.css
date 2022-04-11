@@ -1,0 +1,70 @@
+header {
+    background: url(file:///Users/cash/sunnyside-agency/images/photos/image-header.jpg);
+    background-size: cover;
+    color: white;
+    width:1440px;
+    height: 800px;
+    left: 0px;
+    top:0px;
+    position: relative;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+   
+    
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height, or 139% */
+    
+    letter-spacing: -0.128571px;
+    
+    color: #FFFFFF;
+}
+
+li {
+    padding: 50px 40px;
+    
+}
+
+h1 {
+    position: absolute;
+width: 750px;
+height: 69px;
+left: 344.5px;
+top: 195px;
+
+font-family: 'Fraunces 9pt Soft';
+font-style: normal;
+font-weight: 900;
+font-size: 56px;
+line-height: 69px;
+
+text-align: center;
+letter-spacing: 8.75px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+}
+
+.contact {
+  
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    border-radius: 28px;
+}
+
+.sunnyside {
+    font-family: 'Fraunces 9pt Soft';
+    margin-right: 630px;
+    margin-bottom: 50px;
+    font-size: 200%;
+}
