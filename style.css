@@ -14,7 +14,7 @@ header {
     
 }
 
-ul {
+.firstlist {
     display: flex;
     list-style: none;
     justify-content: flex-end;
@@ -203,4 +203,128 @@ padding-bottom: 50px;
 color: #3E7467;
 
 
+}
+
+.client {
+    font-family: 'Fraunces 9pt Soft';
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 5px;
+
+color: #A7AAAD;
+
+}
+
+.client {
+    margin-top: 100px;
+}
+
+.staff {
+    display: flex;
+    margin-bottom: 300px;
+
+}
+
+.stafftext {
+
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 32px;
+text-align: center;
+letter-spacing: -0.128571px;
+color: #5B636D;
+}
+
+.director, .officer, .owner {
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    width: 350px;
+    height: 96px;
+}
+
+.emily, .thomas, .jennie {
+    width: 72px;
+    height: 72px;
+    border-radius: 50px;
+}
+
+h5 {
+    font-family: 'Fraunces 9pt Soft';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+letter-spacing: -0.128571px;
+
+color: #24303E;
+}
+
+h6 {
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 25px;
+/* identical to box height, or 179% */
+
+text-align: center;
+letter-spacing: -0.1px;
+
+color: #A7AAAD;
+}
+
+.gallery {
+    display: flex;
+    width: 1440px;
+    height:447px;
+}
+
+footer {
+    margin-top: -40px;
+width: 1440px;
+height: 350px;
+
+
+background: #90D4C6;
+}
+
+.sunny {
+    text-align: center;
+    padding-top: 80px;
+    font-family: 'Barlow';
+    
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 25px;
+    /* identical to box height, or 139% */
+    
+    letter-spacing: -0.128571px;
+    
+    color: #458D7E;
+ 
+}
+
+.secondlist {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height, or 139% */
+
+letter-spacing: -0.128571px;
+margin-top: -30px;
+color: #458D7E;
 }
