@@ -1,3 +1,4 @@
+
 header {
     background: url(file:///Users/cash/sunnyside-agency/images/photos/image-header.jpg);
     background-size: cover;
@@ -7,6 +8,7 @@ header {
     left: 0px;
     top:0px;
     position: relative;
+    
 }
 
 ul {
@@ -32,7 +34,7 @@ li {
     
 }
 
-h1 {
+.creative {
     position: absolute;
 width: 750px;
 height: 69px;
@@ -67,4 +69,100 @@ color: #FFFFFF;
     margin-right: 630px;
     margin-bottom: 50px;
     font-size: 200%;
+}
+
+.fleche {
+    position: absolute;
+width: 1px;
+height: 100px;
+left: 719.5px;
+top: 360.54px;
+
+border: 6px solid #FFFFFF;
+}
+
+.pointe {
+    position: absolute;
+width: 30px;
+height: 15px;
+left: 705px;
+top: 453.02px;
+
+border: 6px solid #FFFFFF;
+}
+
+.main {
+    display: flex;
+}
+
+.textmain {
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    padding:0px 130px;
+}
+
+.title b{
+    font-family: 'Fraunces 9pt Soft';
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 49px;
+letter-spacing: -0.285714px;
+
+color: #24303E;
+}
+
+.content {
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 30px;
+/* or 167% */
+
+letter-spacing: -0.128571px;
+
+color: #808397;
+}
+
+h4 {
+    font-family: 'Fraunces 9pt Soft';
+font-style: normal;
+font-weight: 900;
+font-size: 15px;
+line-height: 25px;
+/* identical to box height, or 167% */
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+color: #24303E;
+}
+
+.lastbloc {
+    
+display: flex;
+
+}
+
+.cherry {
+    background: url(file:///Users/cash/sunnyside-agency/images/photos/image-graphic-design.jpg);
+   background-repeat: no-repeat;
+width: 910.4px;
+height: 1138px;
+left: -110.2px;
+top: 1462px;
+
+
+}
+
+.manda {
+    background: url(file:///Users/cash/sunnyside-agency/images/photos/image-photography.jpg);
+    background-repeat: no-repeat;
+    width: 910.4px;
+    height: 1138px;
+    left: -110.2px;
+    top: 1462px;
 }
