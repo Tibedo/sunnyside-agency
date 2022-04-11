@@ -26,6 +26,7 @@ header {
     /* identical to box height, or 139% */   
     letter-spacing: -0.128571px;    
     color: #FFFFFF;
+    
 }
 
 li {
@@ -96,9 +97,13 @@ li {
     left: 720px
 }
 
+
+
+
 .main {
     display: flex;
     margin-top: -5px;
+   
 }
 
 .textmain {
@@ -154,9 +159,14 @@ h4 {
     cursor: pointer;
 }
 
+
+
+
+
 .lastbloc {    
     display: flex;
     margin-top: -5px;
+    
 }
 
 .cherry {
@@ -337,4 +347,54 @@ svg {
 
 svg:hover {
     cursor: pointer;
+}
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+    body {
+        max-width: 375px;
+        max-height: 640px;
+
+    }
+    header {
+    width:375px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    top: 0;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .lastbloc {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .staff {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .director, .officer, .owner {
+        margin-top: -100px;
+        margin-bottom: -100px;
+        padding: 230px 0px;
+        text-align: center;
+        width: 350px;
+        height: 96px;
+    }
+     .egg {
+         width: 375px;
+     }
+
+
 }
