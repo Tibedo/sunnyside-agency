@@ -1,5 +1,5 @@
 body {
-    margin: auto;
+    margin: 0 auto;
 }
 
 header {
@@ -17,54 +17,43 @@ header {
 .firstlist {
     display: flex;
     list-style: none;
-    justify-content: flex-end;
-   
-    
+    justify-content: flex-end;  
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    /* identical to box height, or 139% */
-    
-    letter-spacing: -0.128571px;
-    
+    /* identical to box height, or 139% */   
+    letter-spacing: -0.128571px;    
     color: #FFFFFF;
 }
 
 li {
-    padding: 50px 40px;
-    
+    padding: 50px 40px;    
 }
-
+.about:hover, .sunnyside:hover, .services:hover, .contact:hover, .projects:hover{
+    cursor: pointer;
+}
 .creative {
     position: absolute;
-width: 750px;
-height: 69px;
-left: 344.5px;
-top: 195px;
-
-font-family: 'Fraunces 9pt Soft';
-font-style: normal;
-font-weight: 900;
-font-size: 56px;
-line-height: 69px;
-
-text-align: center;
-letter-spacing: 8.75px;
-text-transform: uppercase;
-
-color: #FFFFFF;
-
-
+    width: 750px;
+    height: 69px;
+    left: 344.5px;
+    top: 195px;
+    font-family: 'Fraunces 9pt Soft';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 69px;
+    text-align: center;
+    letter-spacing: 8.75px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .contact {
   
-    background: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.25;
-    border-radius: 28px;
+   
 }
 
 .sunnyside {
@@ -76,26 +65,40 @@ color: #FFFFFF;
 
 .fleche {
     position: absolute;
-width: 1px;
-height: 100px;
-left: 719.5px;
-top: 360.54px;
-
-border: 6px solid #FFFFFF;
+    width: 0px;
+    height: 100px;
+    left: 719.5px;
+    top: 360.54px;
+    border: 6px solid #FFFFFF;
 }
 
-.pointe {
+.pointe::before, .pointe::after {
     position: absolute;
-width: 30px;
-height: 15px;
-left: 705px;
-top: 453.02px;
+    content: "";
+    width: 0px;
+    height: 20px;
+    left: 705px;
+    top: 453.02px;
+    border: 3px solid #FFFFFF;
+}
 
-border: 6px solid #FFFFFF;
+.pointe::before {
+    transform: rotate(45deg);
+    transform-origin: right bottom;
+    top: 452px;
+    left: 720px;
+}
+
+.pointe::after {
+    transform: rotate(135deg);
+    transform-origin: right top;
+    top: 479px;
+    left: 720px
 }
 
 .main {
     display: flex;
+    margin-top: -5px;
 }
 
 .textmain {
@@ -108,59 +111,63 @@ border: 6px solid #FFFFFF;
 
 .title b{
     font-family: 'Fraunces 9pt Soft';
-font-style: normal;
-font-weight: 900;
-font-size: 40px;
-line-height: 49px;
-letter-spacing: -0.285714px;
-
-color: #24303E;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.285714px;
+    color: #24303E;
 }
 
 .content {
     font-family: 'Barlow';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 30px;
-/* or 167% */
-
-letter-spacing: -0.128571px;
-
-color: #808397;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.128571px;
+    color: #808397;
 }
 
 h4 {
     font-family: 'Fraunces 9pt Soft';
-font-style: normal;
-font-weight: 900;
-font-size: 15px;
-line-height: 25px;
-
-
-letter-spacing: 1px;
-text-transform: uppercase;
-
-color: #24303E;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24303E;
 }
 
-.lastbloc {
-    
-display: flex;
+.learnegg, .learnglass {
+    text-decoration: underline 5px rgb(228, 228, 228);
+}
 
+.learnegg:hover {
+    text-decoration: underline 5px yellow;  
+    cursor: pointer; 
+}
+
+.learnglass:hover {
+    text-decoration: underline 5px rgb(250, 75, 89);   
+    cursor: pointer;
+}
+
+.lastbloc {    
+    display: flex;
+    margin-top: -5px;
 }
 
 .cherry {
     background: url(file:///Users/cash/sunnyside-agency/images/photos/image-graphic-design.jpg);
-   background-repeat: no-repeat;
-width: 910.4px;
-height: 600px;
-left: -110.2px;
-top: 1462px;
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-
+    background-repeat: no-repeat;
+    width: 910.4px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  
 }
 
 .manda {
@@ -168,55 +175,49 @@ justify-content: flex-end;
     background-repeat: no-repeat;
     width: 910.4px;
     height: 600px;
-    left: -110.2px;
-    top: 1462px;
     display: flex;
-flex-direction: column;
-justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
 
 }
 
 .titlefruit {
     font-family: 'Fraunces 9pt Soft';
-font-style: normal;
-font-weight: 900;
-font-size: 28px;
-line-height: 35px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 35px;
 
-text-align: center;
-letter-spacing: -0.2px;
-color: #24554A;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #24554A;
 
 }
 
 .textfruit {
     width: 50%;
     font-family: 'Barlow';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 27px;
-margin: 0 auto;
-text-align: center;
-letter-spacing: -0.114286px;
-padding-bottom: 50px;
-color: #3E7467;
-
-
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: -0.114286px;
+    padding-bottom: 50px;
+    color: #3E7467;
 }
 
 .client {
     font-family: 'Fraunces 9pt Soft';
-font-style: normal;
-font-weight: 900;
-font-size: 20px;
-line-height: 25px;
-/* identical to box height */
-
-text-align: center;
-letter-spacing: 5px;
-
-color: #A7AAAD;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 5px;
+    color: #A7AAAD;
 
 }
 
@@ -232,14 +233,14 @@ color: #A7AAAD;
 
 .stafftext {
 
-font-family: 'Barlow';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 32px;
-text-align: center;
-letter-spacing: -0.128571px;
-color: #5B636D;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.128571px;
+    color: #5B636D;
 }
 
 .director, .officer, .owner {
@@ -258,28 +259,25 @@ color: #5B636D;
 
 h5 {
     font-family: 'Fraunces 9pt Soft';
-font-style: normal;
-font-weight: 900;
-font-size: 18px;
-line-height: 22px;
-text-align: center;
-letter-spacing: -0.128571px;
-
-color: #24303E;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.128571px;
+    color: #24303E;
 }
 
 h6 {
     font-family: 'Barlow';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 25px;
-/* identical to box height, or 179% */
-
-text-align: center;
-letter-spacing: -0.1px;
-
-color: #A7AAAD;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    /* identical to box height, or 179% */
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #A7AAAD;
 }
 
 .gallery {
@@ -290,27 +288,21 @@ color: #A7AAAD;
 
 footer {
     margin-top: -40px;
-width: 1440px;
-height: 350px;
-
-
-background: #90D4C6;
+    width: 1440px;
+    height: 350px;
+    background: #90D4C6;
 }
 
 .sunny {
     text-align: center;
     padding-top: 80px;
-    font-family: 'Barlow';
-    
+    font-family: 'Barlow';    
     font-weight: 600;
     font-size: 40px;
     line-height: 25px;
-    /* identical to box height, or 139% */
-    
-    letter-spacing: -0.128571px;
-    
-    color: #458D7E;
- 
+    /* identical to box height, or 139% */    
+    letter-spacing: -0.128571px;    
+    color: #458D7E; 
 }
 
 .secondlist {
@@ -318,13 +310,31 @@ background: #90D4C6;
     display: flex;
     justify-content: center;
     font-family: 'Barlow';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 25px;
-/* identical to box height, or 139% */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height, or 139% */
+    letter-spacing: -0.128571px;
+    margin-top: -30px;
+    color: #458D7E;
+}
 
-letter-spacing: -0.128571px;
-margin-top: -30px;
-color: #458D7E;
+.icons {
+    display: flex;
+    justify-content: center;
+    
+}
+
+svg {
+    padding: 0 20px;
+}
+
+.links:hover {
+    color: white;   
+    cursor: pointer;
+}
+
+svg:hover {
+    cursor: pointer;
 }
