@@ -1,3 +1,6 @@
+body {
+    margin: auto;
+}
 
 header {
     background: url(file:///Users/cash/sunnyside-agency/images/photos/image-header.jpg);
@@ -133,7 +136,7 @@ font-style: normal;
 font-weight: 900;
 font-size: 15px;
 line-height: 25px;
-/* identical to box height, or 167% */
+
 
 letter-spacing: 1px;
 text-transform: uppercase;
@@ -151,10 +154,12 @@ display: flex;
     background: url(file:///Users/cash/sunnyside-agency/images/photos/image-graphic-design.jpg);
    background-repeat: no-repeat;
 width: 910.4px;
-height: 1138px;
+height: 600px;
 left: -110.2px;
 top: 1462px;
-
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
 
 }
 
@@ -162,7 +167,40 @@ top: 1462px;
     background: url(file:///Users/cash/sunnyside-agency/images/photos/image-photography.jpg);
     background-repeat: no-repeat;
     width: 910.4px;
-    height: 1138px;
+    height: 600px;
     left: -110.2px;
     top: 1462px;
+    display: flex;
+flex-direction: column;
+justify-content: flex-end;
+
+}
+
+.titlefruit {
+    font-family: 'Fraunces 9pt Soft';
+font-style: normal;
+font-weight: 900;
+font-size: 28px;
+line-height: 35px;
+
+text-align: center;
+letter-spacing: -0.2px;
+color: #24554A;
+
+}
+
+.textfruit {
+    width: 50%;
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 27px;
+margin: 0 auto;
+text-align: center;
+letter-spacing: -0.114286px;
+padding-bottom: 50px;
+color: #3E7467;
+
+
 }
