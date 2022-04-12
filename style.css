@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0 auto;
 }
@@ -100,7 +102,7 @@ li {
 
 
 
-.main {
+.main, .maintwo {
     display: flex;
     margin-top: -5px;
    
@@ -355,27 +357,57 @@ svg:hover {
 
 
 @media screen and (max-width: 640px) {
-    body {
-        max-width: 375px;
-        max-height: 640px;
-
-    }
+   
     header {
     width:375px;
+    height: 640px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 200%;
-    top: 0;
+    
+    top: 0px;
     }
 
+    .about, .services, .projects, .contact {
+        display: none;
+
+    }
+
+    .sunnyside {
+        margin-right: 200px;
+        font-size: 150%;
+    }
+
+    .creative {
+        margin-left: -350px;
+        max-width: 375px;
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .fleche {
+        margin-left: 180px;
+    }
+
+    .pointe:before, .pointe:after {
+        margin-left: 180px;
+    }
     .main {
         display: flex;
         flex-wrap: wrap-reverse;
     }
 
+    .maintwo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .textmain {
+        padding: 0 35px;
+    }
+
     .lastbloc {
         display: flex;
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
     }
 
     .staff {
@@ -396,5 +428,44 @@ svg:hover {
          width: 375px;
      }
 
+     .glass {
+         width: 375px;
+     }
+
+    .manda {
+        background-size: 200%;
+        background-position: center;
+    }
+
+    .cherry {
+        background-size: 200%;
+        background-position: center;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        width: 375px;
+       
+    }
+
+    .fourpics {
+        width: 187px;
+    }
+
+    footer {
+        width: 375px;
+        margin-top: 694px;
+        
+    }
+
+    .fleche {
+        left: 0;
+    }
+
+    .pointe::before, .pointe::after {
+        left:0;
+    }
 
 }
