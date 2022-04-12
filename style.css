@@ -4,6 +4,7 @@ body {
     margin: 0px auto;
 }
 
+/* START HEADER */
 header {
     background: url(file:///Users/cash/sunnyside-agency/images/photos/image-header.jpg);
     background-size: cover;
@@ -12,8 +13,7 @@ header {
     height: 800px;
     left: 0px;
     top:0px;
-    position: relative;
-    
+    position: relative;   
 }
 
 .firstlist {
@@ -27,8 +27,7 @@ header {
     line-height: 25px;
     /* identical to box height, or 139% */   
     letter-spacing: -0.128571px;    
-    color: #FFFFFF;
-    
+    color: #FFFFFF;  
 }
 
 li {
@@ -59,7 +58,7 @@ li {
 }
 
 .sunnyside {
-    font-family: 'Fraunces 9pt Soft';
+    font-family:'Courier New', Courier, monospace;
     margin-right: 630px;
     margin-bottom: 50px;
     font-size: 200%;
@@ -97,10 +96,12 @@ li {
     top: 479px;
     left: 720px
 }
+/* END OF HEADER */
 
 
 
 
+/* MAIN EGG GLASS*/
 .main, .maintwo {
     display: flex;
     margin-top: -5px;
@@ -159,11 +160,13 @@ h4 {
     text-decoration: underline 5px rgb(250, 75, 89);   
     cursor: pointer;
 }
+/* END MAIN EGG GLASS*/
 
 
 
 
 
+/* CHERRY MANDA */
 .lastbloc {    
     display: flex;
     margin-top: -5px;
@@ -219,7 +222,12 @@ h4 {
     padding-bottom: 50px;
     color: #3E7467;
 }
+/* END CHERRY MANDA */
 
+
+
+
+/* ARTICLE STAFF */
 .client {
     font-family: 'Fraunces 9pt Soft';
     font-style: normal;
@@ -233,13 +241,10 @@ h4 {
     margin-top: 100px;
 }
 
-
-
 .staff {
     display: flex;
     margin-bottom: 300px;
     width: 1440px;
-
 }
 
 .stafftext {
@@ -290,13 +295,21 @@ h6 {
     letter-spacing: -0.1px;
     color: #A7AAAD;
 }
+/* END ARTICLE STAFF */
 
+
+
+/* PICS GALLERY */
 .gallery {
     display: flex;
     width: 1440px;
     height:447px;
 }
 
+
+
+
+/* FOOTER ICONS */
 footer {
     margin-top: -40px;
     width: 1440px;
@@ -357,9 +370,16 @@ svg:hover {
 .topnav_link {
     display: none;
 }
+/* END FOOTER ICONS */
 
 
-/* Mobile */
+
+
+
+
+
+/* ************ RESPONSIVE MOBILE ************** */
+          /* OK FOR SCREEN = 375 x 640px  */
 
 @media screen and (max-width: 640px) {
    
@@ -377,9 +397,8 @@ svg:hover {
 
     }
 
-
     .sunnyside {
-        margin-right: 200px;
+        margin-right: 180px;
         margin-top: -90px;
         font-size: 150%;
     }
@@ -387,16 +406,19 @@ svg:hover {
     .creative {
         margin-left: -350px;
         max-width: 375px;
+        margin-top: -10px;
         font-weight: 600;
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .fleche {
         margin-left: 180px;
+        left: 0;
     }
-
+    
     .pointe:before, .pointe:after {
         margin-left: 180px;
+        left: 0;
     }
     .main {
         display: flex;
@@ -470,6 +492,10 @@ svg:hover {
         width: 375px;   
     }
 
+    .sunny {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
     .links {
         padding: 40px 25px;
     }
@@ -478,18 +504,13 @@ svg:hover {
        margin-right: 20px;
     }
 
-    .fleche {
-        left: 0;
-    }
-
-    .pointe::before, .pointe::after {
-        left:0;
-    }
+    
 
 
 
 
 
+/* HAMBURGER MENU */
 
     /* hide classic menu */
   #topnav_menu {
