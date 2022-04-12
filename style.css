@@ -1,7 +1,7 @@
 
 
 body {
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 header {
@@ -54,10 +54,7 @@ li {
     color: #FFFFFF;
 }
 
-.contact {
-  
-   
-}
+
 
 .sunnyside {
     font-family: 'Fraunces 9pt Soft';
@@ -105,6 +102,7 @@ li {
 .main, .maintwo {
     display: flex;
     margin-top: -5px;
+    width: 1440px;
    
 }
 
@@ -168,6 +166,7 @@ h4 {
 .lastbloc {    
     display: flex;
     margin-top: -5px;
+    width: 1440px;
     
 }
 
@@ -230,16 +229,15 @@ h4 {
     text-align: center;
     letter-spacing: 5px;
     color: #A7AAAD;
-
-}
-
-.client {
     margin-top: 100px;
 }
+
+
 
 .staff {
     display: flex;
     margin-bottom: 300px;
+    width: 1440px;
 
 }
 
@@ -355,6 +353,7 @@ svg:hover {
 
 
 
+/* Mobile */
 
 @media screen and (max-width: 640px) {
    
@@ -443,6 +442,7 @@ svg:hover {
     }
 
     .gallery {
+        margin-top: -150px;
         flex-wrap: wrap;
         display: flex;
         flex-direction: row;
@@ -456,7 +456,7 @@ svg:hover {
 
     footer {
         width: 375px;
-        margin-top: 694px;
+        
         
     }
 
